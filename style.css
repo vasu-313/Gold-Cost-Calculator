@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins' , sans-serif;
+}
+
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: #000000;
+    --main-color: #FFD400;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-y: auto;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 30px;
+    background: var(--main-color);
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav-links a {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-left: 3.5rem;
+}
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-box {
+    display: flex;
+    margin-top: -20px;
+}
+
+.contentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-top: 80px;
+    
+}
+
+.contentBox .form-box {
+    width: 50%;
+}
+
+.contentBox .form-box h2 {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--text-color);
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.contentBox .form-box .inputBox {
+    margin-bottom: 20px;
+}
+
+.contentBox .form-box .inputBox span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #000000;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.contentBox .form-box .inputBox input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #000000;
+    font-size: 16px;
+    color: #000000;
+    background: transparent;
+}
+
+.contentBox .form-box .inputBox button {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 20px;
+    background: var(--main-color);
+    color: #000000;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+.imgBox {
+    /* border: 1px solid black; */
+    margin-top: 110px;
+}
+
+
+ img {
+    width: 600px;
+    height: 450px;
+    margin-top: 85px;
+    margin-right: 100px;
+}
+
+.contentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;    
+}
+
+.contentBox .form-box {
+    width: 50%;
+}
+
+.contentBox .form-box h2 {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--text-color);
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.contentBox .form-box .inputBox {
+    margin-bottom: 20px;
+}
+
+.contentBox .form-box .inputBox span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #000000;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.contentBox .form-box .inputBox input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #000000;
+    font-size: 16px;
+    color: #000000;
+    background: transparent;
+}
+
+.contentBox .form-box .inputBox button {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 20px;
+    background: var(--main-color);
+    color: #000000;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+
+/* contact section */
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 630px;
+    height: 100vh;
+    
+}
+
+section#contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contentBox1 .formBox {
+    width: 50%;
+}
+
+
+#two {
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contentBox1 .formBox .inputBox {
+    margin-bottom: 20px;
+}
+
+.contentBox1 .formBox .inputBox span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #000000;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.contentBox1 .formBox .inputBox input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #000000;
+    font-size: 16px;
+    color: #000000;
+    background: transparent;
+}
+
+.contentBox1 .formBox .inputBox button {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 20px;
+    background: var(--main-color);
+    color: #000000;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* @media (max-width: 768px) {
+
+    section .imgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        margin-top: 39px;
+    }
+    section .contentBox .formBox {
+        width: 100%;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.9);
+        margin: 50px;
+    }
+    #one {
+        display: none;
+    }
+    section .imgBox img {
+        display: none;
+    }
+    
+} */
+
+/* @media (max-width: 460px) {
+    .navbar a {
+        display: none;
+    }
+    img {
+        display: none;
+    }
+    .logo {
+        margin-left: 27px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    img {
+        display: none;
+    }
+    section .contentBox .formBox {
+        margin-bottom: 10px;
+        padding: 17px;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 350px) {
+    section .contentBox .formBox {
+        margin-bottom: 59px;
+        padding: 0px;
+    }
+    .logo {
+        font-size: 1.8rem;
+    }
+} */
+
+
+
+
+#sub {
+    height: 100px;
+}
+
+#costBox {
+    border: none;
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+@media (max-width: 412px) {
+    .home-box {
+        margin-top: 10px;
+    }
+    .imgBox {
+        display: none;
+    }
+    .nav-links {
+        display: none;
+    }
+    #one {
+        display: none;
+    }
+    .inputBox input {
+        width: 290px;
+        height: 53px;
+    }
+    .contentBox{
+    margin-top: 10px;
+
+    }
+}

@@ -8,27 +8,25 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
+    <section class="home" id="home" >
+        <header class="navbar">
             <div class="logo-text"><i class='bx bx-calculator'></i>Gold Cost Calculator</div>
-        </div>
-        <div class="navbar">
-            <a href="#home">Home</a>
-            <a href="#contact">Contact Us</a>
-        </div>
+
+            <div class="nav-links">
+                <a class="nav-home" href="#home">Home</a>
+                <a class="nav-contact" href="#contact">Contact Us</a>
+            </div>
     </header>
 
     <!-- home section design -->
-    <section class="home" id="home">
-        <div class="imgBox">
-            <img src="x2.jpg" alt="gold">
-        </div>
+
+    <div class="home-box">
         <div class="contentBox">
-            <div class="formBox">
+            <div class="form-box">
                 <h2 id="one">GOld Cost Calculator</h2>
                 <form action="#">
                     <div class="inputBox">
-                        <span>Enter 1 Gram Gold Cost</span>
+                        <span>1 Gram Gold Cost</span>
                         <input type="text" id="num1">
                     </div>
 
@@ -53,11 +51,18 @@
                 </form>
             </div>
         </div>
-    </section> 
+        <div class="imgBox">
+            <img src="x.png" alt="gold">
+        </div>
+    </div>
+    
+
+
+    </section>
 
     <!--contact section-->
     <section class="contact" id="contact">
-        <div class="contentBox">
+        <div class="contentBox1">
             <div class="formBox">
                 <h2 id="two">Contact Us</h2>
                 <form action="#">
@@ -81,9 +86,6 @@
                     </div>`
                 </form>
             </div>
-        </div>
-        <div class="imgBox">
-            <img src="x2.jpg" alt="gold">
         </div>
     </section>
 
