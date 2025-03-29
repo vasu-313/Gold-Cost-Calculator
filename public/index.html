@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="home" id="home" >
+        <header class="navbar">
+            <div class="logo-text"><i class='bx bx-calculator'></i>Gold Cost Calculator</div>
+
+            <div class="nav-links">
+                <a class="nav-home" href="#home">Home</a>
+                <a class="nav-contact" href="#contact">Contact Us</a>
+            </div>
+    </header>
+
+    <header class="2nd-nav" >
+        <div class="live-cost">
+            <label class="live" >Live Cost :</label>
+            <div id="gold-live-cost">Loading....</div>
+        </div>
+    </header>
+
+    <!-- home section design -->
+
+    <div class="home-box">
+        <div class="contentBox">
+            <div class="form-box">
+                <h2 id="one">GOld Cost Calculator</h2>
+                <form action="#">
+                    <div class="inputBox">
+                        <span>1 Gram Gold Cost(24k)</span>
+                        <input type="text" id="num1">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Weight(grams)</span>
+                        <input type="text" id="num2">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Purity(karat)</span>
+                        <input type="text" id="num3">
+                    </div>
+
+                    <div class="inputBox">
+                        <button type="submit">Calculate</button>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Your Gold Cost</span>
+                        <input type="text" id="costBox">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="x.png" alt="gold">
+        </div>
+    </div>
+    
+
+
+    </section>
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <div class="contentBox1">
+            <div class="formBox">
+                <h2 id="two">Contact Us</h2>
+                <form action="#">
+                    <div class="inputBox">
+                        <span>Name</span>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Email</span>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>subject</span>
+                        <input type="text" id="sub" name="subject" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <button type="button" onclick="sendMail()" >Submit</button>
+                    </div>`
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="config.js"></script> 
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "re9xyktMOanvf2APi",
+      });
+    })();
+    </script>
+
+    <script src="app.js"></script>
+</body>
