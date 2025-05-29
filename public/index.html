@@ -9,24 +9,35 @@
 </head>
 <body>
     <section class="home" id="home" >
+        <!-- Main Navigation -->
         <header class="navbar">
             <div class="logo-text"><i class='bx bx-calculator'></i>Gold Cost Calculator</div>
+            
+            <div class="menu-icon" id="menu-icon">
+                <i class='bx bx-menu'></i>
+            </div>
 
             <div class="nav-links">
-                <a class="nav-home" href="#home">Home</a>
-                <a class="nav-contact" href="#contact">Contact Us</a>
+                <a href="#home" >Home</a>
+                <a href="#contact" >Contact Us</a>
             </div>
     </header>
 
-    <header class="2nd-nav" >
+    <div class="side-menu" id="side-menu">
+       <div class="close-btn" id="close-menu"><i class='bx bx-x'></i></div>
+       <a href="#home" onclick="closeMenu()">Home</a>
+       <a href="#contact" onclick="closeMenu()">Contact Us</a>
+    </div>
+
+    <!-- Live Gold Cost Section -->
+    <div class="second-nav" >
         <div class="live-cost">
             <label class="live" >Live Cost :</label>
             <div id="gold-live-cost">Loading....</div>
         </div>
-    </header>
+    </div>
 
     <!-- home section design -->
-
     <div class="home-box">
         <div class="contentBox">
             <div class="form-box">
@@ -34,7 +45,7 @@
                 <form action="#">
                     <div class="inputBox">
                         <span>1 Gram Gold Cost(24k)</span>
-                        <input type="text" id="num1">
+                        <input type="text" id="num1"  >
                     </div>
 
                     <div class="inputBox">
@@ -42,9 +53,15 @@
                         <input type="text" id="num2">
                     </div>
 
-                    <div class="inputBox">
-                        <span>Purity(karat)</span>
-                        <input type="text" id="num3">
+                    <div class="inputBox input-row ">
+                        <div class="half-input">
+                            <span>karat(k)</span>
+                            <input type="text" id="num3" class="blur-toggle  ">
+                        </div>
+                        <div class="half-input">
+                            <span>Percentage(%)</span>
+                            <input type="text" id="num4" class="blur-toggle">
+                        </div>
                     </div>
 
                     <div class="inputBox">
@@ -63,10 +80,9 @@
         </div>
     </div>
     
-
-
     </section>
 
+    
     <!--contact section-->
     <section class="contact" id="contact">
         <div class="contentBox1">
@@ -90,7 +106,7 @@
 
                     <div class="inputBox">
                         <button type="button" onclick="sendMail()" >Submit</button>
-                    </div>`
+                    </div>
                 </form>
             </div>
         </div>
@@ -111,3 +127,4 @@
 
     <script src="app.js"></script>
 </body>
+</html>
